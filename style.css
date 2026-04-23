@@ -70,18 +70,15 @@ body {
   background: #2e7d32;
 }
 
-/* SECTION FULL SCREEN */
 .section {
   height: 100vh;
-  padding: 80px;
+  width: 100%;
+  padding: 100px 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 800px;
-  margin: auto;
 }
 
-/* TEXT */
 h2 {
   margin-bottom: 15px;
 }
@@ -90,7 +87,6 @@ p {
   color: #bbb;
 }
 
-/* SKILLS */
 .skills span {
   margin-right: 10px;
   background: #222;
@@ -98,7 +94,6 @@ p {
   border-radius: 5px;
 }
 
-/* CARD */
 .card {
   margin-top: 10px;
   padding: 15px;
@@ -106,7 +101,6 @@ p {
   border-radius: 8px;
 }
 
-/* CONTACT */
 .email-btn {
   margin-top: 10px;
   color: #7f5af0;
@@ -117,14 +111,12 @@ p {
   text-decoration: underline;
 }
 
-/* IMPORT FONT */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
 body {
   font-family: "Poppins", sans-serif;
 }
 
-/* HOME */
 .home {
   text-align: center;
   display: flex;
@@ -133,7 +125,6 @@ body {
   align-items: center;
 }
 
-/* NAMA */
 .hero-name {
   font-size: 100px;
   font-weight: 400; /* ga bold */
@@ -141,7 +132,6 @@ body {
   letter-spacing: -1.5px;
 }
 
-/* TEXT */
 .dynamic-text {
   margin-top: 15px;
   font-size: 28px;
@@ -155,7 +145,6 @@ body {
   margin-right: 5px;
 }
 
-/* GRADIENT TEXT */
 .changing {
   background: linear-gradient(90deg, #2e7d32, #00e676);
   background-clip: text;
@@ -165,7 +154,6 @@ body {
   padding-right: 5px;
 }
 
-/* BUTTON */
 .hero-buttons {
   margin-top: 35px;
   display: flex;
@@ -210,7 +198,6 @@ body {
   border-color: #1b5e20;
 }
 
-/* SOCIAL */
 .socials {
   margin-top: 30px;
 }
@@ -225,4 +212,115 @@ body {
 .socials a:hover {
   color: #2e7d32;
   transform: translateY(-3px);
+}
+
+/* about'eu css awokawok aboutee */
+.about {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.about-left {
+  position: relative;
+}
+
+.about-left img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 15px;
+  box-shadow:
+    0 10px 40px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(46, 125, 50, 0.3);
+  margin-right: 10px;
+  filter: brightness(0.6) contrast(1.15) saturate(0.95);
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.about-left::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+}
+
+.about-right {
+  max-width: 680px;
+}
+
+.about-right h2 {
+  font-size: 30px;
+  margin-bottom: 18px;
+  letter-spacing: -0.5px;
+  font-weight: 300;
+}
+
+.about-text {
+  font-size: 16px;
+  color: #bbb;
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.about-subtitle {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.about-list p {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.about-list ul {
+  list-style: none;
+}
+
+.about-list li {
+  margin-bottom: 2px;
+  color: #aaa;
+  padding-left: 2px;
+  position: relative;
+  line-height: 1.8;
+  text-align: left;
+  letter-spacing: 0;
+  word-spacing: 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.about-list li::before {
+  content: "›";
+  color: #777;
+  font-weight: 300;
+  margin-right: 10px;
+}
+
+.about-card {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 30px;
+  max-width: 1100px;
+  width: 100%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(46, 125, 50, 0.3);
+  transition: 0.3s;
+  align-items: flex-start;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(46, 125, 50, 0.4);
 }
