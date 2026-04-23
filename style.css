@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #0d0d0d;
+  color: #eaeaea;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 100;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 20px;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+}
+
+.menu a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+/* SECTION FULL SCREEN */
+.section {
+  height: 100vh;
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* TEXT */
+h2 {
+  margin-bottom: 15px;
+}
+
+p {
+  color: #bbb;
+}
+
+/* SKILLS */
+.skills span {
+  margin-right: 10px;
+  background: #222;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+/* CARD */
+.card {
+  margin-top: 10px;
+  padding: 15px;
+  border: 1px solid #222;
+  border-radius: 8px;
+}
+
+/* CONTACT */
+.email-btn {
+  margin-top: 10px;
+  color: #7f5af0;
+  text-decoration: none;
+}
+
+.email-btn:hover {
+  text-decoration: underline;
+}
+
+/* IMPORT FONT */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* HOME */
+.home {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NAMA */
+.hero-name {
+  font-size: 100px;
+  font-weight: 400; /* ga bold */
+  color: white;
+  letter-spacing: -1px;
+}
+
+/* TEXT */
+.dynamic-text {
+  margin-top: 15px;
+  font-size: 28px;
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+}
+
+.static {
+  color: #888;
+  margin-right: 5px;
+}
+
+/* GRADIENT TEXT */
+.changing {
+  background: linear-gradient(90deg, #2e7d32, #00e676);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-right: 2px solid #00e676;
+  padding-right: 5px;
+}
+
+/* BUTTON */
+.hero-buttons {
+  margin-top: 35px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 16px 30px;
+  font-size: 18px;
+  border-radius: 40px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn i {
+  font-size: 20px;
+}
+
+.primary {
+  background: #2e7d32;
+  color: white;
+  box-shadow: 0 0 20px rgba(46, 125, 50, 0.4);
+}
+
+.primary:hover {
+  background: #1b5e20;
+  box-shadow: 0 0 30px rgba(46, 125, 50, 0.6);
+}
+
+.secondary {
+  border: 1px solid #555;
+  color: white;
+}
+
+.secondary:hover {
+  background: #1b5e20;
+  border-color: #1b5e20;
+}
+
+/* SOCIAL */
+.socials {
+  margin-top: 30px;
+}
+
+.socials a {
+  font-size: 28px; /* dari 22 → 28 */
+  margin: 0 15px;
+  color: #777;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: #2e7d32;
+}
