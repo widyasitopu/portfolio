@@ -41,3 +41,13 @@ tags.forEach((tag) => {
     tag.classList.toggle("active");
   });
 });
+
+document.querySelectorAll(".tags").forEach((group) => {
+  const tags = group.querySelectorAll(".tag");
+  tags.forEach((tag) => {
+    tag.addEventListener("click", () => {
+      tags.forEach((t) => t.classList.remove("active"));
+      tag.classList.add("active");
+    });
+  });
+});
